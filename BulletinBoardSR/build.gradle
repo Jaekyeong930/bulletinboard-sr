@@ -36,7 +36,9 @@ tasks.named('test') {
 }
 
 
-// link React
+
+
+// link the React
 
 def frontendDir = "$projectDir/src/main/reactfront"
 
