@@ -6,16 +6,36 @@
 </head>
 
 <style>
+
         .layout {
             width : 500px;
             margin : 0 auto;
+            margin-top : 40px;
         }
+        .layout input
+        {
+            width : 100%;
+            box-sizing : border-box;
+            margin-top : 10px;
+        }
+
+        .layout textarea {
+        width : 100%;
+        min-height : 300px;
+        resize: none;
+        }
+
 </style>
 <body>
-  <div class="layout">
-    <input type="text"/>
-    <textarea></textarea>
-    <button>작성</button>
-  </div>
+<div class="outer">
+    <div class="layout">
+        <form action="/board/write_process" method="post">
+            <input name="article_title" placeholder="제목을 입력하세요" type="text"/>
+            <textarea name="article_content"></textarea>
+            <button type="submit" class="article_writing_btn">작성</button>
+        </form>
+
+    </div>
+</div>
 </body>
 </html>
