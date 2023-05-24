@@ -18,6 +18,10 @@ public class Article { // 테이블 명으로 지정해야함
 
     private String article_content;
 
+<<<<<<< HEAD
     private Integer member_nid;
+=======
+    private Integer article_writer;
+>>>>>>> ef108def441884d7961bcd8bdeb9cc782de6a9bc
 
 }
