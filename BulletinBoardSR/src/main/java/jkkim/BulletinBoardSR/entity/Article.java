@@ -21,6 +21,6 @@ public class Article { // 테이블 명으로 지정해야함
 
     private Integer member_nid;
 
-    private Integer article_writer;
+//    private Integer article_writer;
 
 }

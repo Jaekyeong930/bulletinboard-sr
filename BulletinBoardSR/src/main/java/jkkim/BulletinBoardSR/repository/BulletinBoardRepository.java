@@ -4,11 +4,14 @@
 package jkkim.BulletinBoardSR.repository;
 
 import jkkim.BulletinBoardSR.entity.Article;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
 public interface BulletinBoardRepository extends JpaRepository<Article, Integer> { // Entity 클래스와 프라이머리 키의 자료형 입력
+
+
 
 
 }

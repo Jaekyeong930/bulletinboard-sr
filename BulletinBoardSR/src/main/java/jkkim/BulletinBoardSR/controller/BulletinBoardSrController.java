@@ -11,6 +11,8 @@ import org.springframework.util.SystemPropertyUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import java.sql.SQLOutput;
+
 @Controller
 public class BulletinBoardSrController {
 
@@ -29,10 +31,8 @@ public class BulletinBoardSrController {
     @PostMapping("/board/write_process")
     public String boardWriteProcess(Article article) { // 변수명은 html 파일과 동일하게
 
-
+        System.out.println(article.getArticle_title());
         bulletinBoardService.write(article); // 맨앞글자 소문자로 쓰는 이유는?
-
-
 
         return "";
     }
