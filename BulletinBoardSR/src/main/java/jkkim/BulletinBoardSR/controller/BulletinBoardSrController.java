@@ -34,9 +34,6 @@ public class BulletinBoardSrController {
 
 
 
-        System.out.println(article.getArticle_title());
-        System.out.println(article.getArticle_content());
-
         return "";
     }
 }

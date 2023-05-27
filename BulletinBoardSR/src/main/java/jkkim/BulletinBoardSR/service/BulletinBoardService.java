@@ -24,4 +24,6 @@ public class BulletinBoardService {
 
         boardRepository.save(article);
     }
+
+
 }
