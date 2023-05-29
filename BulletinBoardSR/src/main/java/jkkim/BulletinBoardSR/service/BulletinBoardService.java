@@ -11,6 +11,7 @@ import jkkim.BulletinBoardSR.repository.BulletinBoardRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 
 
 @Service
@@ -23,6 +24,11 @@ public class BulletinBoardService {
     public void write(Article article) {
 
         boardRepository.save(article);
+    }
+
+    public List<Article> articleList() {
+
+        return boardRepository.findAll();
     }
 
 
